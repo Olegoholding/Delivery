@@ -1,0 +1,29 @@
+﻿<Page x:Class="Delivery.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Delivery.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid Background="{DynamicResource Accent}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Время работы" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Text="8:00 - 21:00" FontSize="36" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Border Width="1" Background="{DynamicResource Thickness}" HorizontalAlignment="Right"/>
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="Текущее время" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="time" Text="8:00" FontSize="36" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
