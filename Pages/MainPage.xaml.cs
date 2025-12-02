@@ -20,10 +20,21 @@ namespace Delivery.Pages
     /// </summary>
     public partial class MainPage : Page
     {
+        bool _isDarkTheme = false;
         public MainPage()
         {
             InitializeComponent();
             time.Text = DateTime.Now.ToShortTimeString().ToString();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            _isDarkTheme = !_isDarkTheme;
+            string currentTheme = _isDarkTheme ? "LightTheme" : "DarkTheme";
+
+            var newTheme = (ResourceDictionary)Application.LoadComponent(new Uri($"Theme/{currentTheme}.xaml", UriKind.Relative));
+            Application.Current.Resources.MergedDictionaries.RemoveAt(0);
+            Application.Current.Resources.MergedDictionaries.Add(newTheme);
         }
     }
 }

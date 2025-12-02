@@ -6,10 +6,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Theme/DarkTheme.xaml"/>
                 <ResourceDictionary Source="/Theme/LightTheme.xaml"/>
-                <ResourceDictionary Source="/Style/Button.xaml"/>
+                
                 <ResourceDictionary Source="/Style/ComboBox.xaml"/>
                 <ResourceDictionary Source="/Style/AddButton.xaml"/>
+                <ResourceDictionary Source="/Style/Button.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

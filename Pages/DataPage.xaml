@@ -16,7 +16,7 @@
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="label" Text="Блюда" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="0,0,0,15"/>
+        <TextBlock Foreground="{DynamicResource Foreground}" x:Name="label" Text="Блюда" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="0,0,0,15"/>
         <Border Background="{DynamicResource Thickness}" Height="1" VerticalAlignment="Bottom"/>
 
         <Grid Grid.Row="1" Margin="15">
@@ -31,9 +31,9 @@
                         <ColumnDefinition Width="40"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBox Name="SrcBox" FontSize="20" BorderThickness="0" VerticalContentAlignment="Center" Margin="15,0,0,0"/>
+                    <TextBox Name="SrcBox" Background="{DynamicResource Accent}" FontSize="20" BorderThickness="0" VerticalContentAlignment="Center" Margin="15,0,0,0"/>
                     <Border Width="1" Background="{DynamicResource Thickness}" Margin="0,8,0,8" HorizontalAlignment="Right"/>
-                    <TextBlock Name="searchButton" MouseLeftButtonDown="searchButton_MouseLeftButtonDown" Cursor="Hand" Grid.Column="1" FontSize="26" Text="⌕" Foreground="{DynamicResource Thickness}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock  Name="searchButton" MouseLeftButtonDown="searchButton_MouseLeftButtonDown" Cursor="Hand" Grid.Column="1" FontSize="26" Text="⌕" Foreground="{DynamicResource Thickness}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
             </Border>
 
@@ -42,8 +42,8 @@
 
         <DataGrid x:Name="dataGrid" Grid.Row="2"/>
 
-        <Button Name="AddButton" Style="{DynamicResource addButton}" Grid.Row="3" Content="Добавить" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" FontSize="22" FontWeight="Bold" Width="200" Height="40" Click="AddButton_Click"/>
-        <Button x:Name="AddButton_Копировать" Style="{DynamicResource addButton}" Grid.Row="3" Content="Удалить" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0" FontSize="22" FontWeight="Bold" Width="200" Height="40" Click="AddButton_Копировать_Click"/>
+        <Button Name="AddButton" Style="{DynamicResource addButton}" Foreground="{DynamicResource Foreground}" Grid.Row="3" Content="Добавить" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,15,0" FontSize="22" FontWeight="Bold" Width="200" Height="40" Click="AddButton_Click"/>
+        <Button x:Name="AddButton_Копировать" Style="{DynamicResource addButton}" Foreground="{DynamicResource Foreground}" Grid.Row="3" Content="Удалить" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0" FontSize="22" FontWeight="Bold" Width="200" Height="40" Click="AddButton_Копировать_Click"/>
 
     </Grid>
 </Page>

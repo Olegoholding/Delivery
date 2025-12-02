@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="Backgruond" Color="#625e6e"/>
+    <SolidColorBrush x:Key="Accent" Color="#34323b"/>
+    <SolidColorBrush x:Key="Foreground" Color="White"/>
+    <SolidColorBrush x:Key="Foreground2" Color="Black"/>
+    <SolidColorBrush x:Key="Button" Color="#f87192"/>
+    <SolidColorBrush x:Key="MouseEnter" Color="#D24164"/>
+    <SolidColorBrush x:Key="ButtonAccent" Color="#eb6085"/>
+    <SolidColorBrush x:Key="Thickness" Color="#808080"/>
+</ResourceDictionary>

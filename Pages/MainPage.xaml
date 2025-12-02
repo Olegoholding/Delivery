@@ -15,15 +15,20 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Время работы" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
-            <TextBlock Text="8:00 - 21:00" FontSize="36" HorizontalAlignment="Center"/>
+            <TextBlock Foreground="{DynamicResource Foreground}" Text="Время работы" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Foreground="{DynamicResource Foreground}" Text="8:00 - 21:00" FontSize="36" HorizontalAlignment="Center"/>
         </StackPanel>
 
         <Border Width="1" Background="{DynamicResource Thickness}" HorizontalAlignment="Right"/>
 
         <StackPanel Grid.Column="1" VerticalAlignment="Center">
-            <TextBlock Text="Текущее время" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
-            <TextBlock x:Name="time" Text="8:00" FontSize="36" HorizontalAlignment="Center"/>
+            <TextBlock Foreground="{DynamicResource Foreground}" Text="Текущее время" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Foreground="{DynamicResource Foreground}" x:Name="time" Text="8:00" FontSize="36" HorizontalAlignment="Center"/>
         </StackPanel>
+
+        <ComboBox Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="18" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Светлая"/>
+            <ComboBoxItem Content="Тёмная"/>
+        </ComboBox>
     </Grid>
 </Page>
